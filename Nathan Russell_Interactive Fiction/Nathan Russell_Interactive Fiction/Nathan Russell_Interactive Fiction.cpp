@@ -19,12 +19,13 @@ string getTextFromUser(string prompt)
 }
 
 //like the above function, but numbers instead of letters (int instead of string)
-int getNumbersFromUser(string prompt)
+void PrintStoryText(string textToPrint)
 {
-	cout << prompt;
-	int num;
-	cin >> num;
-	return num;
+	cout << "\n=================================================================================\n";
+	cout << textToPrint << endl;
+	cout << "=================================================================================\n";
+	return;
+	
 }
 
 int main()
@@ -41,15 +42,15 @@ int main()
 	do
 	{
 		//title
-		cout << "=================================================================================\n";
+		//cout << "=================================================================================\n";
 
-		cout << "\nOnce upon a time, you awoke to find yourself in an unfamiliar location...\n\n";
+		cout << "Once upon a time, you awoke to find yourself in an unfamiliar location...\n";
 
-		cout << "\tThe Lost Wanderer and the Amnesiac Child: an Interactive Fiction." << endl;
+		PrintStoryText("\tThe Lost Wanderer and the Amnesiac Child: an Interactive Fiction.");
+		//cout << "\tThe Lost Wanderer and the Amnesiac Child: an Interactive Fiction." << endl;
 
 		cout << "\n[Instructions: type one of the specified words to advance the story.]\n\n";
 
-		cout << "=================================================================================";
 		//start of story
 		cout << "\n\nYou groan quietly as you open your eyes. There is nothing but clear sky above you.\nAll that you can see is the tree you woke up under,\nwhich is in a massive and seemingly endless field.\n";
 
